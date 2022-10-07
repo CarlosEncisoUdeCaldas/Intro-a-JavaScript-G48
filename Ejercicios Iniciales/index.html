@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documento G48</title>
+
+    <script>
+        // aqui va el codigo javascript
+        // usando el script en la cabecera <head>
+    </script>
+
   </head>
   <body>
     <header> 
@@ -14,20 +20,91 @@
         <!-- cambiando un texto de un elemento -->
         <h2>Este es un ejercicio JavaScript para cambiar el contenido de un elemento</h2>
         <p id="demo">Parrafo que vamos a cambiar con JavaScript</p>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Texto Cambiado, Hola JS'">Cambiar contenido</button>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Parrafo que vamos a cambiar con JavaScript'">Volver al contenido</button>
+        <button type="button" onclick=" cambiarContenido('Texto Cambiado, Hola JS') " >Cambiar contenido</button>
+        <button type="button" onclick=" cambiarContenido('Parrafo que vamos a cambiar con JavaScript') " >Volver al contenido</button>
         
         <hr>
 
-        <!-- encendiendo un bombillo y apargarlo -->
-        <h2>Encender y Apagar un Bombillo con JavaScript</h2>
-        <button onclick="document.getElementById('miImagen').src = 'on.gif'">Encender</button>
-        <img src="off.gif" alt="off.gif" id="miImagen">
-        <button>Apagar</button>
+        <!-- encendiendo  y apargando un bombillo -->
+        <h2>Cambiando un atributo de etiquetas con JavaScript</h2>
+        <h3>Encender y Apagar un Bombillo con JavaScript</h3>
+        
+        <button onclick = " document.getElementById('miImagen').src = 'img/on.gif' "> Encender </button>
+
+        <img src="img/off.gif" alt="off.gif" id="miImagen">
+
+        <button onclick = " document.getElementById('miImagen').src = 'img/off.gif' "> Apagar </button>
+
+        <hr>
+
+        <h2>Cambiando el estilo de una etiqueta HTML con JavaScript</h2>
+        <p id="estilo">Cambiando el estilo de un texto</p>
+        <button onclick=" cambiarFont('35px') ">Cambiar estilo</button>
+        <button onclick=" cambiarFont('') "> Tamaño original </button>
+
+        <hr>
+
+        <h2>Cambiando el display de un elemento HTML con JavaScript</h2>
+        <div id="hidden" class="row">        
+            <img src="img/NewYork.jpeg" alt="NY.jpeg" width="300">
+            <p>Texto a ocultar junto con la imagen</p>
+        </div>
+        <br>
+        <button type="button" onclick=" mostrarElemento('none') "> Ocultar </button>
+        <button type="button" onclick=" mostrarElemento('block') "> Mostrar </button>
+
+        <hr>
+
+        <p id="insertar" style="font-size: 30px;"></p>
+          
 
     </main>
     <footer>
 
     </footer>
+
+    <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
+    <!-- esta es la manera del codigo outline -->
+    <script>
+      document.getElementById('insertar').innerHTML = "Texto insertado desde un Script";
+
+      // funcion para ocultar elementos
+      // function ocultarElemento(){
+      //   document.getElementById('hidden').style.display = 'none';
+      // }
+
+      //funcion para mostrar los elementos
+      function mostrarElemento( valor ) {
+        document.getElementById('hidden').style.display = valor;
+      }
+
+
+      //funcion para cambiar el tamaño
+      function cambiarFont( valor ) {
+        document.getElementById('estilo').style.fontSize = valor
+      }
+
+
+      //funcion para cambiar el contenido
+      function cambiarContenido( valor ) {
+        document.getElementById('demo').innerHTML = valor;
+      }
+
+      //Encender y apagar un bombillo
+      function encendido(){
+
+      }
+
+
+      function apagado(){
+
+      }
+
+      // funcion unica del bombillo
+      // function OnOff( valor ) {
+
+      // }
+    </script>
+
   </body>
 </html>

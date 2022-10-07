@@ -11,10 +11,20 @@
         <h1 style="text-align: center;">Ejercicios Iniciales</h1>
     </header>
     <main>
+        <!-- cambiando un texto de un elemento -->
         <h2>Este es un ejercicio JavaScript para cambiar el contenido de un elemento</h2>
         <p id="demo">Parrafo que vamos a cambiar con JavaScript</p>
-        <button type="button" onclick="document.getElementById('demo').innerHTML='Texto Cambiado, Hola JS'">Cambiar contenido</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Texto Cambiado, Hola JS'">Cambiar contenido</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Parrafo que vamos a cambiar con JavaScript'">Volver al contenido</button>
+        
         <hr>
+
+        <!-- encendiendo un bombillo y apargarlo -->
+        <h2>Encender y Apagar un Bombillo con JavaScript</h2>
+        <button onclick="document.getElementById('miImagen').src = 'on.gif'">Encender</button>
+        <img src="off.gif" alt="off.gif" id="miImagen">
+        <button>Apagar</button>
+
     </main>
     <footer>
 

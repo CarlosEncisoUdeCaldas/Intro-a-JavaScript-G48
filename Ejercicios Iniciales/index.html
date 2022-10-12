@@ -29,11 +29,11 @@
         <h2>Cambiando un atributo de etiquetas con JavaScript</h2>
         <h3>Encender y Apagar un Bombillo con JavaScript</h3>
         
-        <button onclick = " document.getElementById('miImagen').src = 'img/on.gif' "> Encender </button>
+        <button onclick = " OnOff('img/on.gif') "> Encender </button>
 
         <img src="img/off.gif" alt="off.gif" id="miImagen">
 
-        <button onclick = " document.getElementById('miImagen').src = 'img/off.gif' "> Apagar </button>
+        <button onclick = " OnOff('img/off.gif') "> Apagar </button>
 
         <hr>
 
@@ -65,46 +65,7 @@
 
     <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
     <!-- esta es la manera del codigo outline -->
-    <script>
-      document.getElementById('insertar').innerHTML = "Texto insertado desde un Script";
-
-      // funcion para ocultar elementos
-      // function ocultarElemento(){
-      //   document.getElementById('hidden').style.display = 'none';
-      // }
-
-      //funcion para mostrar los elementos
-      function mostrarElemento( valor ) {
-        document.getElementById('hidden').style.display = valor;
-      }
-
-
-      //funcion para cambiar el tamaño
-      function cambiarFont( valor ) {
-        document.getElementById('estilo').style.fontSize = valor
-      }
-
-
-      //funcion para cambiar el contenido
-      function cambiarContenido( valor ) {
-        document.getElementById('demo').innerHTML = valor;
-      }
-
-      //Encender y apagar un bombillo
-      function encendido(){
-
-      }
-
-
-      function apagado(){
-
-      }
-
-      // funcion unica del bombillo
-      // function OnOff( valor ) {
-
-      // }
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

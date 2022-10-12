@@ -1,5 +1,4 @@
-document.getElementById("insertar").innerHTML =
-  "Texto insertado desde un Script";
+
 
 // funcion para ocultar elementos
 // function ocultarElemento(){
@@ -41,3 +40,12 @@ function OnOff( ruta ){
 // function OnOff( valor ) {
 
 // }
+
+function useWrite(){
+    document.write('Hola Mundo')
+}
+
+function buttonAlert(){
+    window.alert('Bienvenido a la salida Alerta')
+}
+

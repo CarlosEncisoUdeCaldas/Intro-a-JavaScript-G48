@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento G48</title>
+
+    <script>
+        // aqui va el codigo javascript
+        // usando el script en la cabecera <head>
+    </script>
+
+  </head>
+  <body>
+    <header> 
+        <h1 style="text-align: center;">Ejercicios Iniciales</h1>
+    </header>
+    <main>
+        <!-- cambiando un texto de un elemento -->
+        <h2>Este es un ejercicio JavaScript para cambiar el contenido de un elemento</h2>
+        <p id="demo">Parrafo que vamos a cambiar con JavaScript</p>
+        <button type="button" onclick=" cambiarContenido('Texto Cambiado, Hola JS') " >Cambiar contenido</button>
+        <button type="button" onclick=" cambiarContenido('Parrafo que vamos a cambiar con JavaScript') " >Volver al contenido</button>
+        
+        <hr>
+
+        <!-- encendiendo  y apargando un bombillo -->
+        <h2>Cambiando un atributo de etiquetas con JavaScript</h2>
+        <h3>Encender y Apagar un Bombillo con JavaScript</h3>
+        
+        <button onclick = " OnOff('img/on.gif') "> Encender </button>
+
+        <img src="img/off.gif" alt="off.gif" id="miImagen">
+
+        <button onclick = " OnOff('img/off.gif') "> Apagar </button>
+
+        <hr>
+
+        <h2>Cambiando el estilo de una etiqueta HTML con JavaScript</h2>
+        <p id="estilo">Cambiando el estilo de un texto</p>
+        <button onclick=" cambiarFont('35px') ">Cambiar estilo</button>
+        <button onclick=" cambiarFont('') "> Tamaño original </button>
+
+        <hr>
+
+        <h2>Cambiando el display de un elemento HTML con JavaScript</h2>
+        <div id="hidden" class="row">        
+            <img src="img/NewYork.jpeg" alt="NY.jpeg" width="300">
+            <p>Texto a ocultar junto con la imagen</p>
+        </div>
+        <br>
+        <button type="button" onclick=" mostrarElemento('none') "> Ocultar </button>
+        <button type="button" onclick=" mostrarElemento('block') "> Mostrar </button>
+
+        <hr>
+
+        <p id="insertar" style="font-size: 30px;"></p>
+        <button onclick="document.getElementById('insertar').innerHTML='Texto insertado desde un Script'">Insertar Texto</button>
+        <button onclick=" useWrite() ">Document Write</button>
+        <button onclick=" buttonAlert() ">Alerta</button>
+        <button onclick=" console.log('Mensaje a la consola')">Console Log</button>
+        <button onclick=" console.warn('Mensaje warning')">Console Warn</button>
+        <button onclick=" window.print()">Document Print</button>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
+    <!-- esta es la manera del codigo outline -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

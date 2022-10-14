@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento G48</title>
+
+    <script>
+        // aqui va el codigo javascript
+        // usando el script en la cabecera <head>
+    </script>
+
+  </head>
+  <body>
+    <header> 
+        
+    </header>
+    <main>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
+    <!-- esta es la manera del codigo outline -->
+    <script>
+      //explicacion del tema ambito de bloque
+      let nombre = "Enciso";
+      
+      for( let i = 0; i < 5 ; i++ ){
+          setTimeout( () => { 
+            let nombre = "Charles" ;
+            // console.log("Su nombre es " + nombre + " y esta es la iteracion No " + (i+1)); esto es lo mismo que esta en la linea de abajo
+            console.log( `Su nombre es ${nombre} y esta es la iteracion No ${i+1}` ); //este es un template string
+          }, 5000)
+      }
+       
+      console.log("esta es la variable nombre por fuera del scope for: " + nombre);
+
+      //no se puede usar una variable let o const antes que la inicialicemos
+      // resultado = x + 2;
+      // let x = 10;
+      // console.log(resultado);
+      
+      // const car = 'ferrari';
+            
+      // function prueba() {
+      //     const car = 'audi'
+      //     let fruit = 'manzana'
+      //     console.log(car);
+      // }
+
+      // prueba();
+      // console.log(fruit);
+      
+      // //JavaScript es sensitivo a mayusculas y minusculas
+      // const lastName = "Enciso";
+      // const LastName = "Lopez";
+
+      //esto ya no se usa
+      // var x = "hola";
+      // console.log(x);
+      // delcarando variable tipo const
+      // const numero = 7;
+      
+      // console.log(numero);
+      // numero = 10; //esto no se puede hacer, es un error
+      // let otroValor = 10;
+      // console.log("valor inicial de let: " + otroValor);
+      // otroValor = 100;
+      // console.log("nuevo valor de la variable let: " + otroValor);
+
+      //esto ya no se usa
+      // var x = "mundo";
+      // console.log(x);
+      
+      //operador ternario
+        // const resultado = (5>2) ? "5 es mayor" : "5 es menor";
+        // console.log(resultado);
+       
+      //esto es lo mismo que el operador ternario solo que en mas lineas de codigo
+        // if (5>10) {
+        //   console.log("5 es mayor");
+        // } else {
+        //   console.log("5 es menor");  
+        // }
+    </script>
+
+  </body>
+</html>

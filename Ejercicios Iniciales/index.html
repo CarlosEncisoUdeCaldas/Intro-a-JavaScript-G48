@@ -27,65 +27,29 @@
     <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
     <!-- esta es la manera del codigo outline -->
     <script>
-      let nombre = "Enciso";
-
-      for( let i = 0; i < 5 ; i++ ){
-          setTimeout( () => { 
-            let nombre = "Charles" ;
-            // console.log("Su nombre es " + nombre + " y esta es la iteracion No " + (i+1));
-            console.log( `Su nombre es ${nombre} y esta es la iteracion No ${i+1}` );
-          }, 5000)
+      const person = {
+        firstName : 'Charles',
+        lastName  : 'Xavier',
+        id        : 123,
+        address   : {
+          lat  : 5.214,
+          long : 241.3333
+        },
+        fullName  : function(){
+          return `Su nombre completo es ${this.firstName} ${this.lastName}`
+        },
+        arreglo: [10,20,30]
       }
-       
-      console.log("esta es la variable nombre por fuera del scope for: " + nombre);
-
-      //no se puede usar una variable let o const antes que la inicialicemos
-      // resultado = x + 2;
-      // let x = 10;
-      // console.log(resultado);
       
-      // const car = 'ferrari';
-            
-      // function prueba() {
-      //     const car = 'audi'
-      //     let fruit = 'manzana'
-      //     console.log(car);
-      // }
-
-      // prueba();
-      // console.log(fruit);
-      
-      // //JavaScript es sensitivo a mayusculas y minusculas
-      // const lastName = "Enciso";
-      // const LastName = "Lopez";
-
-      //esto ya no se usa
-      // var x = "hola";
-      // console.log(x);
-      // delcarando variable tipo const
-      // const numero = 7;
-      
-      // console.log(numero);
-      // numero = 10; //esto no se puede hacer, es un error
-      // let otroValor = 10;
-      // console.log("valor inicial de let: " + otroValor);
-      // otroValor = 100;
-      // console.log("nuevo valor de la variable let: " + otroValor);
-
-      //esto ya no se usa
-      // var x = "mundo";
-      // console.log(x);
-      
-      //operador ternario
-        // const resultado = (5>2) ? "5 es mayor" : "5 es menor";
-        // console.log(resultado);
-       
-      //esto es lo mismo que el operador ternario solo que en mas lineas de codigo
-        // if (5>10) {
-        //   console.log("5 es mayor");
-        // } else {
-        //   console.log("5 es menor");  
-        // }
+      console.log(person);
+      console.log(person.arreglo); //muestra el arreglo completo
+      console.log(person.arreglo[0]);
+      console.log(person.arreglo[1]);
+      console.log(person.arreglo[2]);
+      person.arreglo.push(40);
+      console.log(person.arreglo);
+      // console.log(person.fullName); //sino le escribimos los parentesis nos despliega el codigo de la funcion
+      // console.log(person.fullName()); //forma correcta de llamar un atributo tipo funcion
     </script>
 
   </body>

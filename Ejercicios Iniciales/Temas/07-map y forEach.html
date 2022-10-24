@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento G48</title>
+
+    <script>
+      // aqui va el codigo javascript
+      // usando el script en la cabecera <head>
+    </script>
+  </head>
+  <body>
+    <h2>Insertando valores de un array</h2>
+    <p id="demo" style="font-size: 50px"></p>
+
+    <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
+    <!-- esta es la manera del codigo outline -->
+    <script>
+      // funcion map
+      //la funcion map recorre tambien un array pero puede generar un nuevo array despues de terminar todo el proceso
+      const numeros = [10, 20, 30, 40];
+
+      // const doublesNumeros = [];
+      // doublesNumeros[0] = numeros[0] * 2;
+      // doublesNumeros[1] = numeros[1] * 2;
+      // doublesNumeros[2] = numeros[2] * 2;
+      // doublesNumeros[3] = numeros[3] * 2;
+
+      //con la funcion map esto lo podemos simplificar
+      const doublesNumeros = numeros.map( (item) => item * 2 );
+      //funcion anonima con la declaracion tradicional
+      // const doublesNumeros = numeros.map(function (item) {
+      //   return item * 2;
+      // });
+
+      console.log(numeros);
+      console.log(doublesNumeros);
+
+      // const person = {
+      //   firstName : 'Charles',
+      //   lastName  : 'Xavier',
+      //   id        : 123,
+      // }
+      // console.log(person);
+
+      // //aqui hago el envio del archivo hacia el servidor
+      // const cadena = JSON.stringify(person);
+      // console.log(cadena);
+
+      // // convierto el archivo tipo cadena a objeto
+      // const fileTypeJson = JSON.parse(cadena);
+      // console.log(fileTypeJson);
+
+      // //insertar los valores de un array dentro de una etiqueta HTML
+      // const cars = ['Ferrari', 'Porsche', 'Ford'];
+      // const texto = `Elemento 0: ${cars[0]}`
+      // document.getElementById('demo').innerHTML = cars;
+      // console.log(cars.length);
+
+      // for(let i = 0 ; i < cars.length; i++) {
+      //   console.log('ciclo for ' + cars[i]);
+      // }
+
+      // //recorriendo un arreglo con el metodo forEach()
+      // //el metodo forEach requiere de una funcion callback para que se pueda ejecutar
+      // //una funcion callback no es mas que una funcion dentro de otra funcion
+      // // cars.forEach( function ( elemento ) {
+      // //     return console.log(elemento);
+      // // } ) ;
+
+      // //esta es la misma funcion anterior pero en formato tipo flecha
+      // const nuevoArray = cars.forEach( ( car ) => car ) ;
+
+      // //la funcion map recorre tambien un array pero puede generar un nuevo array despues de terminar todo el proceso
+      // const nuevoArray01 = cars.map( ( itemCar ) => itemCar ) ;
+      // // cars.map( function (i) {
+      // //   return console.log(i)
+      // // } );
+
+      // console.log(nuevoArray);
+      // console.log(nuevoArray01);
+    </script>
+  </body>
+</html>

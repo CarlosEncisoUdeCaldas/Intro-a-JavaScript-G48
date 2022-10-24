@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento G48</title>
+
+    <script>
+        // aqui va el codigo javascript
+        // usando el script en la cabecera <head>
+    </script>
+
+  </head>
+  <body>
+    <header> 
+        
+    </header>
+    <main>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
+    <!-- esta es la manera del codigo outline -->
+    <script>
+      const person = {
+        firstName : 'Charles',
+        lastName  : 'Xavier',
+        id        : 123,
+        address   : {
+          lat  : 5.214,
+          long : 241.3333
+        },
+        fullName  : function(){
+          return `Su nombre completo es ${this.firstName} ${this.lastName}`
+        },
+        arreglo: [10,20,30]
+      }
+      
+      console.log(person); //imprime el objeto person
+      console.log(person.arreglo); //muestra el arreglo completo
+      console.log(person.arreglo[0]);
+      console.log(person.arreglo[1]);
+      console.log(person.arreglo[2]);
+      person.arreglo.push(40);
+      console.log(person.arreglo);
+      // console.log(person.fullName); //sino le escribimos los parentesis nos despliega el codigo de la funcion
+      // console.log(person.fullName()); //forma correcta de llamar un atributo tipo funcion
+    </script>
+
+  </body>
+</html>

@@ -7,50 +7,38 @@
     <title>Documento G48</title>
 
     <script>
-        // aqui va el codigo javascript
-        // usando el script en la cabecera <head>
+      // aqui va el codigo javascript
+      // usando el script en la cabecera <head>
     </script>
-
   </head>
   <body>
-    <header> 
-        
-    </header>
-    <main>
-        
-
-    </main>
-    <footer>
-
-    </footer>
+    <h2>Insertando valores de un array</h2>
+    <p id="demo" style="font-size: 50px"></p>
 
     <!-- Antes de finalizar el codigo del body puedo insertar codigo JavaScript -->
     <!-- esta es la manera del codigo outline -->
     <script>
-      const person = {
-        firstName : 'Charles',
-        lastName  : 'Xavier',
-        id        : 123,
-        address   : {
-          lat  : 5.214,
-          long : 241.3333
-        },
-        fullName  : function(){
-          return `Su nombre completo es ${this.firstName} ${this.lastName}`
-        },
-        arreglo: [10,20,30]
-      }
       
-      console.log(person);
-      console.log(person.arreglo); //muestra el arreglo completo
-      console.log(person.arreglo[0]);
-      console.log(person.arreglo[1]);
-      console.log(person.arreglo[2]);
-      person.arreglo.push(40);
-      console.log(person.arreglo);
-      // console.log(person.fullName); //sino le escribimos los parentesis nos despliega el codigo de la funcion
-      // console.log(person.fullName()); //forma correcta de llamar un atributo tipo funcion
-    </script>
+      // funcion sintaxis tradicional
+      function saludar() {
+        return 'Hola Mundo'
+      } 
+      //conversion a tipo flecha de la funcion tradicional
+      // saludar = () => 'Hola Mundo';
+      
+      console.log( saludar() );
+      
+      //funcion anonima
+      const saludar01 = function() {
+        return 'Hello!'
+      }
+      //funcion flecha de saludar01
+      // saludar01 = () => 'Hola Mundo';
 
+      console.log( saludar01() )
+      
+      
+
+    </script>
   </body>
 </html>
